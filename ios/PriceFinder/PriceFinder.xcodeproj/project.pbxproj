@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB208A811CF20F81004D1CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB208A801CF20F81004D1CD5 /* AppDelegate.swift */; };
+		FB208A881CF20F81004D1CD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB208A861CF20F81004D1CD5 /* Main.storyboard */; };
+		FB208A8A1CF20F82004D1CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB208A891CF20F82004D1CD5 /* Assets.xcassets */; };
+		FB208A8D1CF20F82004D1CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB208A8B1CF20F82004D1CD5 /* LaunchScreen.storyboard */; };
+		FB208A951CF21BF6004D1CD5 /* PriceFinderTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB208A941CF21BF6004D1CD5 /* PriceFinderTabBarController.swift */; };
+		FB2E824C1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB2E824A1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodeld */; };
+		FB2E824E1D3D990200886BD5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E824D1D3D990200886BD5 /* DataController.swift */; };
+		FB2E82501D3D9F4A00886BD5 /* SavedItemGroupMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E824F1D3D9F4A00886BD5 /* SavedItemGroupMO.swift */; };
+		FB2E82521D3DA4A700886BD5 /* SavedItemMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E82511D3DA4A700886BD5 /* SavedItemMO.swift */; };
+		FB2E82561D3DB68A00886BD5 /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E82551D3DB68A00886BD5 /* Scraper.swift */; };
+		FB2E82581D46CA6500886BD5 /* BestBuyScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E82571D46CA6500886BD5 /* BestBuyScraper.swift */; };
+		FB2E825C1D46D61200886BD5 /* SearchRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E825B1D46D61200886BD5 /* SearchRunner.swift */; };
+		FB322ED71D0DAF4B0078968A /* HomeItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB322ED61D0DAF4B0078968A /* HomeItemDetailViewController.swift */; };
+		FB6F20721CF7D66100A85C4E /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F20711CF7D66100A85C4E /* SearchResultTableViewCell.swift */; };
+		FB6F20741CF7DD2000A85C4E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F20731CF7DD2000A85C4E /* Utils.swift */; };
+		FB6F20761CF7E10300A85C4E /* HomeItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F20751CF7E10300A85C4E /* HomeItemTableViewCell.swift */; };
+		FB70DB0F1D2DE98A00F94FA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB70DB0E1D2DE98A00F94FA8 /* LoginViewController.swift */; };
+		FB8639B41CF2376000BF21D0 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8639B31CF2376000BF21D0 /* SearchTableViewController.swift */; };
+		FB8639B61CF237E000BF21D0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8639B51CF237E000BF21D0 /* Item.swift */; };
+		FB8639BC1CF2497900BF21D0 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8639BB1CF2497900BF21D0 /* HomeTableViewController.swift */; };
+		FBB5A8DE1D4D3C8500B19785 /* HomeItemDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5A8DD1D4D3C8500B19785 /* HomeItemDetailTableViewCell.swift */; };
+		FBC4DD451D5657AC00DD6CD8 /* ConfirmationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DD441D5657AC00DD6CD8 /* ConfirmationLabel.swift */; };
+		FBC4DD471D56ED3300DD6CD8 /* WalmartScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DD461D56ED3300DD6CD8 /* WalmartScraper.swift */; };
+		FBC4DD491D57B02700DD6CD8 /* SearsScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DD481D57B02700DD6CD8 /* SearsScraper.swift */; };
+		FBC4DD4B1D57CFAE00DD6CD8 /* EbayScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DD4A1D57CFAE00DD6CD8 /* EbayScraper.swift */; };
+		FBC4DD4D1D5DE4E800DD6CD8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DD4C1D5DE4E800DD6CD8 /* Config.swift */; };
+		FBD4AFD01D07BCC30067BB78 /* HomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD4AFCF1D07BCC30067BB78 /* HomeItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB208A7D1CF20F81004D1CD5 /* PriceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB208A801CF20F81004D1CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB208A871CF20F81004D1CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB208A891CF20F82004D1CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB208A8C1CF20F82004D1CD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB208A8E1CF20F82004D1CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB208A941CF21BF6004D1CD5 /* PriceFinderTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFinderTabBarController.swift; sourceTree = "<group>"; };
+		FB2E824B1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PriceFinderDataModel.xcdatamodel; sourceTree = "<group>"; };
+		FB2E824D1D3D990200886BD5 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FB2E824F1D3D9F4A00886BD5 /* SavedItemGroupMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedItemGroupMO.swift; sourceTree = "<group>"; };
+		FB2E82511D3DA4A700886BD5 /* SavedItemMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedItemMO.swift; sourceTree = "<group>"; };
+		FB2E82531D3DAF1C00886BD5 /* PriceFinderDataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PriceFinderDataModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		FB2E82551D3DB68A00886BD5 /* Scraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
+		FB2E82571D46CA6500886BD5 /* BestBuyScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestBuyScraper.swift; sourceTree = "<group>"; };
+		FB2E825B1D46D61200886BD5 /* SearchRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRunner.swift; sourceTree = "<group>"; };
+		FB322ED61D0DAF4B0078968A /* HomeItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemDetailViewController.swift; sourceTree = "<group>"; };
+		FB6F20711CF7D66100A85C4E /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		FB6F20731CF7DD2000A85C4E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FB6F20751CF7E10300A85C4E /* HomeItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemTableViewCell.swift; sourceTree = "<group>"; };
+		FB70DB0E1D2DE98A00F94FA8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB8639B31CF2376000BF21D0 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		FB8639B51CF237E000BF21D0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FB8639BB1CF2497900BF21D0 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		FBB5A8DD1D4D3C8500B19785 /* HomeItemDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FBC4DD441D5657AC00DD6CD8 /* ConfirmationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationLabel.swift; sourceTree = "<group>"; };
+		FBC4DD461D56ED3300DD6CD8 /* WalmartScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalmartScraper.swift; sourceTree = "<group>"; };
+		FBC4DD481D57B02700DD6CD8 /* SearsScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearsScraper.swift; sourceTree = "<group>"; };
+		FBC4DD4A1D57CFAE00DD6CD8 /* EbayScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbayScraper.swift; sourceTree = "<group>"; };
+		FBC4DD4C1D5DE4E800DD6CD8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FBD4AFCF1D07BCC30067BB78 /* HomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB208A7A1CF20F81004D1CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB208A741CF20F81004D1CD5 = {
+			isa = PBXGroup;
+			children = (
+				FB208A7F1CF20F81004D1CD5 /* PriceFinder */,
+				FB208A7E1CF20F81004D1CD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB208A7E1CF20F81004D1CD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB208A7D1CF20F81004D1CD5 /* PriceFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB208A7F1CF20F81004D1CD5 /* PriceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				FBB5A8E11D4D779000B19785 /* Views */,
+				FBB5A8E01D4D776700B19785 /* Models */,
+				FBB5A8DF1D4D771700B19785 /* ViewControllers */,
+				FB2E82541D3DB56000886BD5 /* PriceFinding */,
+				FB2E82471D3C51B200886BD5 /* CoreData */,
+				FB208A801CF20F81004D1CD5 /* AppDelegate.swift */,
+				FB208A861CF20F81004D1CD5 /* Main.storyboard */,
+				FB208A891CF20F82004D1CD5 /* Assets.xcassets */,
+				FB208A8B1CF20F82004D1CD5 /* LaunchScreen.storyboard */,
+				FB208A8E1CF20F82004D1CD5 /* Info.plist */,
+				FB6F20731CF7DD2000A85C4E /* Utils.swift */,
+			);
+			path = PriceFinder;
+			sourceTree = "<group>";
+		};
+		FB2E82471D3C51B200886BD5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E824A1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodeld */,
+				FB2E824D1D3D990200886BD5 /* DataController.swift */,
+				FB2E824F1D3D9F4A00886BD5 /* SavedItemGroupMO.swift */,
+				FB2E82511D3DA4A700886BD5 /* SavedItemMO.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		FB2E82541D3DB56000886BD5 /* PriceFinding */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E82551D3DB68A00886BD5 /* Scraper.swift */,
+				FB2E82571D46CA6500886BD5 /* BestBuyScraper.swift */,
+				FB2E825B1D46D61200886BD5 /* SearchRunner.swift */,
+				FBC4DD461D56ED3300DD6CD8 /* WalmartScraper.swift */,
+				FBC4DD481D57B02700DD6CD8 /* SearsScraper.swift */,
+				FBC4DD4A1D57CFAE00DD6CD8 /* EbayScraper.swift */,
+				FBC4DD4C1D5DE4E800DD6CD8 /* Config.swift */,
+			);
+			name = PriceFinding;
+			sourceTree = "<group>";
+		};
+		FBB5A8DF1D4D771700B19785 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB70DB0E1D2DE98A00F94FA8 /* LoginViewController.swift */,
+				FB208A941CF21BF6004D1CD5 /* PriceFinderTabBarController.swift */,
+				FB8639B31CF2376000BF21D0 /* SearchTableViewController.swift */,
+				FB8639BB1CF2497900BF21D0 /* HomeTableViewController.swift */,
+				FB322ED61D0DAF4B0078968A /* HomeItemDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FBB5A8E01D4D776700B19785 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD4AFCF1D07BCC30067BB78 /* HomeItem.swift */,
+				FB8639B51CF237E000BF21D0 /* Item.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FBB5A8E11D4D779000B19785 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB6F20751CF7E10300A85C4E /* HomeItemTableViewCell.swift */,
+				FB6F20711CF7D66100A85C4E /* SearchResultTableViewCell.swift */,
+				FBB5A8DD1D4D3C8500B19785 /* HomeItemDetailTableViewCell.swift */,
+				FBC4DD441D5657AC00DD6CD8 /* ConfirmationLabel.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB208A7C1CF20F81004D1CD5 /* PriceFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB208A911CF20F82004D1CD5 /* Build configuration list for PBXNativeTarget "PriceFinder" */;
+			buildPhases = (
+				FB208A791CF20F81004D1CD5 /* Sources */,
+				FB208A7A1CF20F81004D1CD5 /* Frameworks */,
+				FB208A7B1CF20F81004D1CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PriceFinder;
+			productName = PriceFinder;
+			productReference = FB208A7D1CF20F81004D1CD5 /* PriceFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB208A751CF20F81004D1CD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = stimes.enterprises;
+				TargetAttributes = {
+					FB208A7C1CF20F81004D1CD5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7Z5W3ZU459;
+					};
+				};
+			};
+			buildConfigurationList = FB208A781CF20F81004D1CD5 /* Build configuration list for PBXProject "PriceFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB208A741CF20F81004D1CD5;
+			productRefGroup = FB208A7E1CF20F81004D1CD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB208A7C1CF20F81004D1CD5 /* PriceFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB208A7B1CF20F81004D1CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB208A8D1CF20F82004D1CD5 /* LaunchScreen.storyboard in Resources */,
+				FB208A8A1CF20F82004D1CD5 /* Assets.xcassets in Resources */,
+				FB208A881CF20F81004D1CD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB208A791CF20F81004D1CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8639BC1CF2497900BF21D0 /* HomeTableViewController.swift in Sources */,
+				FB2E82581D46CA6500886BD5 /* BestBuyScraper.swift in Sources */,
+				FBB5A8DE1D4D3C8500B19785 /* HomeItemDetailTableViewCell.swift in Sources */,
+				FB2E82501D3D9F4A00886BD5 /* SavedItemGroupMO.swift in Sources */,
+				FB2E824C1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodeld in Sources */,
+				FBD4AFD01D07BCC30067BB78 /* HomeItem.swift in Sources */,
+				FBC4DD4B1D57CFAE00DD6CD8 /* EbayScraper.swift in Sources */,
+				FB2E82561D3DB68A00886BD5 /* Scraper.swift in Sources */,
+				FBC4DD451D5657AC00DD6CD8 /* ConfirmationLabel.swift in Sources */,
+				FB6F20741CF7DD2000A85C4E /* Utils.swift in Sources */,
+				FB6F20721CF7D66100A85C4E /* SearchResultTableViewCell.swift in Sources */,
+				FB6F20761CF7E10300A85C4E /* HomeItemTableViewCell.swift in Sources */,
+				FBC4DD491D57B02700DD6CD8 /* SearsScraper.swift in Sources */,
+				FB2E825C1D46D61200886BD5 /* SearchRunner.swift in Sources */,
+				FB8639B41CF2376000BF21D0 /* SearchTableViewController.swift in Sources */,
+				FBC4DD471D56ED3300DD6CD8 /* WalmartScraper.swift in Sources */,
+				FB208A951CF21BF6004D1CD5 /* PriceFinderTabBarController.swift in Sources */,
+				FB8639B61CF237E000BF21D0 /* Item.swift in Sources */,
+				FBC4DD4D1D5DE4E800DD6CD8 /* Config.swift in Sources */,
+				FB208A811CF20F81004D1CD5 /* AppDelegate.swift in Sources */,
+				FB2E824E1D3D990200886BD5 /* DataController.swift in Sources */,
+				FB70DB0F1D2DE98A00F94FA8 /* LoginViewController.swift in Sources */,
+				FB2E82521D3DA4A700886BD5 /* SavedItemMO.swift in Sources */,
+				FB322ED71D0DAF4B0078968A /* HomeItemDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB208A861CF20F81004D1CD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB208A871CF20F81004D1CD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB208A8B1CF20F82004D1CD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB208A8C1CF20F82004D1CD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB208A8F1CF20F82004D1CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB208A901CF20F82004D1CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB208A921CF20F82004D1CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PriceFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stimes.enterprises.PriceFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FB208A931CF20F82004D1CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PriceFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stimes.enterprises.PriceFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB208A781CF20F81004D1CD5 /* Build configuration list for PBXProject "PriceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB208A8F1CF20F82004D1CD5 /* Debug */,
+				FB208A901CF20F82004D1CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB208A911CF20F82004D1CD5 /* Build configuration list for PBXNativeTarget "PriceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB208A921CF20F82004D1CD5 /* Debug */,
+				FB208A931CF20F82004D1CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB2E824A1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB2E82531D3DAF1C00886BD5 /* PriceFinderDataModel 2.xcdatamodel */,
+				FB2E824B1D3C52B700886BD5 /* PriceFinderDataModel.xcdatamodel */,
+			);
+			currentVersion = FB2E82531D3DAF1C00886BD5 /* PriceFinderDataModel 2.xcdatamodel */;
+			path = PriceFinderDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB208A751CF20F81004D1CD5 /* Project object */;
+}

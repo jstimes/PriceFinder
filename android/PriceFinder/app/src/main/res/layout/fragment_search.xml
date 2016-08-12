@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enterprises.stimes.pricefinder.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchFragmentSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></SearchView>
+        
+        <ListView
+            android:id="@+id/searchFragmentListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#51aaf2"
+            android:foregroundTint="#51aaf2"
+            android:background="#51aaf2">
+
+            <Button
+                android:id="@+id/searchFragmentAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:enabled="false"
+                android:text="@string/addToFindList"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/searchItemCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/searchItemTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/searchItemCheckBox"
+        android:layout_toLeftOf="@+id/searchSublayout"
+        android:ellipsize="marquee"
+        android:singleLine="false"
+        android:text="Product title"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!--ImageView
+        android:id="@+id/searchItemClickIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        ></ImageView-->
+
+    <LinearLayout
+        android:id="@id/searchSublayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true">
+        <!--android:layout_toLeftOf="@id/searchItemClickIcon"-->
+
+        <TextView
+            android:id="@+id/searchItemPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="$100.00"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/searchItemVendorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchItemPriceText"
+            android:layout_alignParentRight="true"
+            android:text="Walmart"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

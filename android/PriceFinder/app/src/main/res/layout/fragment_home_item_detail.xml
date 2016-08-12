@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enterprises.stimes.pricefinder.HomeItemDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeItemDetailSearchText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeItemDetailTargetPrice"
+            android:layout_below="@id/homeItemDetailSearchText"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="Target Price: $X"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeItemDetailLowestPrice"
+            android:layout_below="@id/homeItemDetailTargetPrice"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="Lowest Price: $Y"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeItemDetailDateAdded"
+            android:layout_below="@id/homeItemDetailLowestPrice"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="Date Added: 12/12/12"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeItemDetailWatchingItems"
+            android:layout_below="@id/homeItemDetailDateAdded"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="Watching Items:"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeItemDetailWatchingItems">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeItemDetailItemsList">
+
+            </ListView>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
